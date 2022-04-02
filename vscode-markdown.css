@@ -1,0 +1,56 @@
+container {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+pill {
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline;
+  margin: 5px;
+  cursor: default;
+}
+
+pill:nth-child(8n + 1) {
+  background-color: #ff0000;
+}
+
+pill:nth-child(8n + 2) {
+  background-color: #ff0080;
+}
+
+pill:nth-child(8n + 3) {
+  background-color: #ff8800;
+}
+
+pill:nth-child(8n + 4) {
+  background-color: #f5bb00;
+}
+
+pill:nth-child(8n + 5) {
+  background-color: #01d773;
+}
+
+pill:nth-child(8n + 6) {
+  background-color: #01c4c7;
+}
+
+pill:nth-child(8n + 7) {
+  background-color: #0080ff;
+}
+
+pill:nth-child(8n + 8) {
+  background-color: #a600ff;
+}
+/*# sourceMappingURL=vscode-markdown.css.map */

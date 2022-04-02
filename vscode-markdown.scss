@@ -1,0 +1,36 @@
+container {
+  padding: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+pill {
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline;
+  margin: 5px;
+  cursor: default;
+}
+$colors: (
+  #ff0000,
+  #ff0080,
+  #ff8800,
+  #f5bb00,
+  #01d773,
+  #01c4c7,
+  #0080ff,
+  #a600ff
+);
+
+@each $color in $colors {
+  $len: length($colors);
+  $i: index($colors, $color);
+
+  // using the formula an+b for coloring
+  pill:nth-child(#{$len}n + #{$i}) {
+    background-color: $color;
+  }
+}
